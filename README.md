@@ -55,4 +55,7 @@ This is just to show the potential of using a more suitable hardware and running
 
 note that some edits will have to be done to make the code efficient on a better device (hardware). i.e making the two camera's read distance better and more optimally.
 
+You can read more from: https://www.researchgate.net/publication/362345190_DESIGN_AND_IMPLEMENTATION_OF_SMART_GLASSES_FOR_BLIND_PEOPLE_-_Using_Raspberry_PI
+
 Thank you.
+
