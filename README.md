@@ -6,8 +6,6 @@ The glass's camera collects data from the user's surroundings and delivers it to
 ## Block Diagram of Proposed System
 ![image](https://user-images.githubusercontent.com/53413092/181853881-1f98663c-38bf-499e-ad36-4c379bff4a81.png)
 
-## Flow chart of system
-![image](https://user-images.githubusercontent.com/53413092/181854107-9257e672-8996-43de-9695-f496b11bc50f.png)
 
 ## Explanation of Working Concept (code)
 ### **CODE EXPLANATION**
