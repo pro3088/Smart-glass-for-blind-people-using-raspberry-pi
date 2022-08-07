@@ -22,9 +22,9 @@ A function called depth is used to estimate distance. For compilation, this meth
 After the depth has been computed, another function called audio is called into action. This method takes the depth, converts it to a sentence, and then converts it to audio. The audio is then played for the blind to hear.
 
 ## How to install and use
-First to train your model, check out this guide -> https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md.
+First to train your model, check out this guide ->https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi#part-1---how-to-train-convert-and-run-custom-tensorflow-lite-object-detection-models-on-windows-10
 
-His guide also helps you setup your raspiberry pi configurations and all the necessary installations you need to carry a similar project.
+His guide also helps you setup your raspiberry pi configurations and all the necessary installations you need to carry a similar project -> https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md.
 
 After following his guide copy the "TFLite_depth_detection_webcam.py" file and replace with his
 
