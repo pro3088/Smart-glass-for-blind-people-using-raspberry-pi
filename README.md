@@ -1,3 +1,5 @@
+![GitHub all releases](https://img.shields.io/github/downloads/pro3088/Smart-glass-for-blind-people-using-raspberry-pi/total)
+![GitHub](https://img.shields.io/github/license/pro3088/Smart-glass-for-blind-people-using-raspberry-pi)
 # Smart-glass-for-blind-people-using-raspberry-pi
 ## Brief Description
 This approach examines the environment for potential threats along a walk path, including the distance to the object and the type of object, and notifies the user of the danger, allowing the user to move around freely without continual monitoring. After the model detects the object, an algorithm tracks the distance to the selected user and provides the user with the necessary information required to process his environment. 
