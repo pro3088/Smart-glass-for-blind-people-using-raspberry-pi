@@ -15,7 +15,7 @@ This python script runs the main activity of the system. This code is majorly br
 2.	Distance estimation
 3.	Audio playback
 
-In terms of object detection, the script uses a model that has previously been trained. This script employs the model to determine whether or not a known obstacle exists (cars and humans in this case). Because this system uses two cameras, detection must take place on both ends of the cameras. Threading is established as a notion that allows numerous processes to execute at the same time during code execution. The code has been separated into functions to make it easier to understand. Object detection is a function that contains all of the implementation for detecting recognized obstacles. The code is then executed for both threads, enabling detection for both cameras.
+This script employs the model to determine whether or not a known obstacle exists (cars and humans in this case). Because this system uses two cameras, detection must take place on both ends of the cameras.
 
 A function called depth is used to estimate distance. For compilation, this method accepts the left and right picture frames. The object detection function is then checked to see if an object has been detected. When an object is discovered, this function sends certain arguments to the triangulation script, which calculates and returns the estimated depth.
 
