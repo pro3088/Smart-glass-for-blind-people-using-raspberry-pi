@@ -21,6 +21,38 @@ A function called depth is used to estimate distance. For compilation, this meth
 
 After the depth has been computed, another function called audio is called into action. This method takes the depth, converts it to a sentence, and then converts it to audio. The audio is then played for the blind to hear.
 
+## How to install and use
+First to train your model, check out this guide -> https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md.
+
+His guide also helps you setup your raspiberry pi configurations and all the necessary installations you need to carry a similar project.
+
+After following his guide copy the "TFLite_depth_detection_webcam.py" file and replace with his
+
+```
+btn = Button(24)        # GPIO 24 (pin # 18)
+B = 4               #Distance between the cameras [cm]
+```
+The project needs a button to start the program, you may want to change the GPIO or set to this exact button
+The B value also needs to be edited incase you may change the distance between your camera's
+
+```
+def audio(depth):
+    string = "A human is "
+    away = " meters away "
+    depth = int(depth)
+    depth = str(depth)
+    depth = string+depth+away
+    print(depth)
+    language = 'en'
+    
+    myobj = gTTS(text=depth, lang=language, slow=False)
+    
+    myobj.save("depth.mp3")
+    
+    music = pyglet.resource.media("depth.mp3")
+    music.play()
+```
+This code section may be edited as your implementation sees fit. Here i used GTTS and pyglet to convert the text to speech and play it back for the user.
 
 ## Implementation of Design
 ![image](https://user-images.githubusercontent.com/53413092/181854175-59785071-797a-413d-a7bc-101c7acd7c1e.png)
@@ -46,7 +78,14 @@ This cost was taken at March, 2022 in the nigerian local currency
 | 9	| Miscellaneous (shipping and others) |	| |	N22,000 |
 | TOTAL| 	| | |	N 97,150 |
 
-### **note**
+## How to contribute
+This code is not fully optimised for the raspberry pi as the CPU takes a massive drop in performance when the camera's disparity's are linked. As of this code both camera's are separated.
+
+The initial plan for the project was to implement both distance estimation and path finding, to bring out the features of the raspberry pi. This plan unfortunately fell short due to it's limitations and my inability to move around this problem.
+
+https://github.com/bwalsh0/Stereo-Camera-Path-Planning. This implementation was an inspiration for me, anyone who wants to implement the pathfinding feature may use his work.
+
+### **Note**
 The raspberry pi isnt the best hardware to run this project as it doesn't have TPU, some processes couldn't be tested and the hardware runs slowly.
 
 This is just to show the potential of using a more suitable hardware and running the processes on it.
@@ -55,5 +94,7 @@ note that some edits will have to be done to make the code efficient on a better
 
 You can read more from: https://www.researchgate.net/publication/362345190_DESIGN_AND_IMPLEMENTATION_OF_SMART_GLASSES_FOR_BLIND_PEOPLE_-_Using_Raspberry_PI
 
-Thank you.
+## Special Mentions
+https://github.com/EdjeElectronics
 
+https://github.com/bwalsh0
