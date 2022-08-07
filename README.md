@@ -1,7 +1,7 @@
 # Smart-glass-for-blind-people-using-raspberry-pi
 ## Brief Description
 This approach examines the environment for potential threats along a walk path, including the distance to the object and the type of object, and notifies the user of the danger, allowing the user to move around freely without continual monitoring. After the model detects the object, an algorithm tracks the distance to the selected user and provides the user with the necessary information required to process his environment. 
-The glass's camera collects data from the user's surroundings and delivers it to the model, which scans it and gives input on probable directions. This smart glass is a tremendous help to blind individuals who are always frustrated by the fact that, due to their condition, they must be constantly overseen by others, relieving their anxieties a little by providing new solutions to their problems.
+The glass's camera collects data from the user's surroundings and delivers it to the model, which scans it and gives input on probable directions.
 
 ## Block Diagram of Proposed System
 ![image](https://user-images.githubusercontent.com/53413092/181853881-1f98663c-38bf-499e-ad36-4c379bff4a81.png)
